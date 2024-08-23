@@ -2,6 +2,12 @@ import { useEffect, useRef } from "react"
 import Button from "./components/Button/Button"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
+
+import logo from './assets/logo.svg'
+import arrowsmall from './assets/outline/arrow-small-right.svg'
+import mark from './assets/Maskgroup.png'
+import arrow from './assets/arrowr.svg'
+import introduction from './assets/introduction.png'
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
@@ -85,7 +91,7 @@ function App() {
       <header 
       ref={headerRef}
        className="flex flex-row items-center justify-between lg:justify-around w-full montserrat">
-            <img id="logo" src="/public/logo.svg" className= " opacity-0 w-[75px] h-11" alt="" />
+            <img id="logo" src={logo} className= " opacity-0 w-[75px] h-11" alt="" />
             <nav id="items" className=" hidden lg:flex opacity-0 items-center justify-around gap-6 text-white">
               <a  className="link" href="#">about</a>
               <a  className="link " href="#">services</a>
@@ -117,12 +123,12 @@ nisl tincidunt eget. Lectus mauris eros in vitae .
 
               <div id="button" className="flex opacity-0 items-center">
                   <Button className=" montserrat flex items-center justify-center" typeB="B">BUILD YOUR WORLD</Button>
-                  <img src="/public/outline/arrow-small-right.svg" className="hidden lg:flex" alt="" />
+                  <img src={arrowsmall} className="hidden lg:flex" alt="" />
               </div> 
               </div> 
           </div>
           <div className=" h-full flex items-center justify-center">
-            <img id="mask" className="opacity-0" src="/public/Maskgroup.png" alt="" />
+            <img id="mask" className="opacity-0" src={mark} alt="" />
           </div>
       </section>
       <section id="sec" className=" opacity-0 w-full mt-2 gap-4 flex items-center flex-col lg:flex-wrap pt-5 lg:pt-10 lg:px-10">
@@ -131,7 +137,7 @@ nisl tincidunt eget. Lectus mauris eros in vitae .
         <h1 className="montserrat text-white text-[26px] font-bold">INTRODUCTION</h1>
             <div className="flex items-center  gap-3">
             <h2 className="font-normal montserrat text-gray-50 text-2xl">TO HYDRA VR</h2>
-              <img src="/public/arrowr.svg" className="hidden lg:flex" alt="" />
+              <img src={arrow} className="hidden lg:flex" alt="" />
             </div>
         </div>
 
@@ -142,7 +148,7 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
         </div>
            
           <div className="flex flex-col lg:flex-row items-center  w-full justify-between lg:justify-around">
-          <img src="/public/introduction.png" className="w-[336px] h-[358px]" alt="" />
+          <img src={introduction} className="w-[336px] h-[358px]" alt="" />
             <div className="relative flex flex-col items-center lg:items-start gap-3">
               <div className=" hidden lg:flex flex-col">
                 <h1 className="montserrat text-white text-[26px] font-bold">ABOUT</h1>
