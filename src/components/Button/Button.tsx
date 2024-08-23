@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { IButton } from '../../interfaces/IButton'
 
 import cn from 'classnames'
