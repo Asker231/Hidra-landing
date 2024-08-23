@@ -3,7 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+
+@layer base{
+  body{
+    background-color: #302C42;
+    min-height: 100%;
+  }
+}
+
+@layer components{
+  .margin{
+    margin: 0 auto;
+  }
+  .link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .border{
+    border: 1px solid white;
+  }
+  .gradientButton{
+    background: linear-gradient(#8176AF,#C0B7E8);
+  }
+}
