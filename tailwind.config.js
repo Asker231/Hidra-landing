@@ -8,6 +8,9 @@ export default {
     extend: {
       colors:{
         "prymary_bg":"#302C42"
+      },
+      screens:{
+        'mb':'426px'
       }
     },
   },
